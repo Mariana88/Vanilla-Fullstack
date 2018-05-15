@@ -15,7 +15,7 @@ app.use('/banana/:id', function (req, res, next) {
     message += 'banana number ';
     message += req.params.id;
     console.log('in \/tim');
-    next()
+  //  next()
 });
 
 app.use('/apple/:id', function (req, res, next) {

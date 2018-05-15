@@ -6,6 +6,7 @@ var message = '';
 app.use(function (req, res, next) {
     message = 'entered server.  ';
     console.log('-------------- in / ---------------');
+    next();
 });
 
 // let's tidy this up a bit
