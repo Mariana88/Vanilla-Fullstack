@@ -15,16 +15,21 @@ function (req, res, next) {
         message += ' unknown fruit';
     };
     console.log('in \/:fruit');
+<<<<<<< HEAD
     next()
 }
 
 app.use('/:fruit', cb);
+=======
+    next();
+});
+>>>>>>> e6eee01bbf7f8f575e1459c87dbeb5ead0b2e1d8
 
 app.use('/*/:id', function (req, res, next) {
     // params are by default strings
     message += ' ' + parseInt(req.params.id);
     console.log('in \/\*\/:id');
-    next()
+    next();
 });
 
 app.use(function (req, res, next) {
