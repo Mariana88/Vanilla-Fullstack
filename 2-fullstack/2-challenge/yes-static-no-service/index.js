@@ -15,6 +15,10 @@ app.use(morgan('tiny'));
 const static_service = require('./static_service');
 app.use("/", static_service);
 
+
+const restful_notes_service = require('./restful_notes_service');
+app.use("/api", restful_notes_service);
+
 // modify this file to also use the restful service
 
 app.listen(port, function(err) {
